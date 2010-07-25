@@ -132,7 +132,7 @@ config OMAP3ES2_VDD1_OPP3
 	  Select this option if you want to boot at OPP3.
 
 config OMAP3ES2_VDD1_OPP4
-	bool "MPU-600hz/DSP-396Mhz(OPP4)"
+	bool "MPU-600hz/DSP-360Mhz(OPP4)"
 	depends on OMAP3_PM
 	help
 	  Select this option if you want to boot at OPP4.
