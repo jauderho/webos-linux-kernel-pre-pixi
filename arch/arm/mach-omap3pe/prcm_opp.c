@@ -56,8 +56,8 @@
 
 static u8 mpu_iva2_vdd1_volts [PRCM_NO_VDD1_OPPS] = {
 	/* Vsel corresponding to 0.962V (OPP1), 1.050V (OPP2),
-	1.075V (OPP3), 1.225V (OPP4), 1.25V (OPP5), 1.337V (OPP6), 1.362V (OPP7) */
-		0x1d, 0x24, 0x26, 0x32, 0x34, 0x3b, 0x3d
+	1.075V (OPP3), 1.175V (OPP4), 1.25V (OPP5), 1.288V (OPP6), 1.362V (OPP7) */
+		0x1d, 0x24, 0x26, 0x2e, 0x34, 0x37, 0x3d
 };
 
 static u8 core_l3_vdd2_volts [PRCM_NO_VDD2_OPPS] = { /* only 3 OPPs */
