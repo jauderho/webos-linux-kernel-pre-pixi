@@ -515,17 +515,17 @@ void prcm_scale_finish(void)
 			valid_rate = clk_round_rate(p_vdd1_clk, S500M);
 			break;
 		case PRCM_VDD1_OPP4:
-			valid_rate = clk_round_rate(p_vdd1_clk, S550M);
-			break;
-		case PRCM_VDD1_OPP5:
 			valid_rate = clk_round_rate(p_vdd1_clk, S600M);
 			break;
-                case PRCM_VDD1_OPP6:
-                        valid_rate = clk_round_rate(p_vdd1_clk, S720M);
-                        break;
-                case PRCM_VDD1_OPP7:
-                        valid_rate = clk_round_rate(p_vdd1_clk, S1050M);
-                        break;
+		case PRCM_VDD1_OPP5:
+			valid_rate = clk_round_rate(p_vdd1_clk, S720M);
+			break;
+    case PRCM_VDD1_OPP6:
+      valid_rate = clk_round_rate(p_vdd1_clk, S800M);
+      break;
+    case PRCM_VDD1_OPP7:
+      valid_rate = clk_round_rate(p_vdd1_clk, S1050M);
+      break;
 
 		}
 		p_vdd1_clk->set_rate(p_vdd1_clk, valid_rate);
